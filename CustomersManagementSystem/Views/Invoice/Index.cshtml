@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CustomersManagementSystem.ViewModels.Invoices.InvoiceViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">Invoices</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll",Model)
+</div>
+ 
